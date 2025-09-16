@@ -1,0 +1,39 @@
+body,
+html,
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black ;
+}
+.card {
+  width: 30%;
+  height: 40rem;
+  margin: 3rem 0;
+  border: 2px solid blue;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container {
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  
+}
+.card-img {
+  width: 50%;
+  height: 40rem;
+  margin: 3rem 0;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
