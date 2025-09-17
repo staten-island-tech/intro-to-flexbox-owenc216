@@ -7,33 +7,46 @@ html,
     box-sizing: border-box;
 }
 body{
-    background-color: black ;
+    background-color: #01abe6 ;
 }
 .card {
   width: 30%;
   height: 40rem;
   margin: 3rem 0;
-  border: 2px solid blue;
+  border: 2px solid;
   border-radius: 10px;
+  background-color: #f82f6e;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+    border-color: #fab39c;
 }
 .container {
   width: 90vw;
-  margin: 2rem auto;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: white;
+    border-color: #fab39c;
   
 }
 .card-img {
   width: 50%;
   height: 40rem;
-  margin: 3rem 0;
-  border: 2px solid blue;
+  margin: 3rem auto;
+  border: 2px solid;
   border-radius: 10px;
+  border-color: #fab39c;
+}
+.card-header {
+  font-size: 40px;
+}
+.card-price {
+  font-size: 30px;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
 }
