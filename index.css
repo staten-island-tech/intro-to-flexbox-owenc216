@@ -21,7 +21,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-    border-color: #fab39c;
+  border-color: #fab39c;
+  transition:0.3s
 }
 .container {
   width: 90vw;
@@ -49,4 +50,17 @@ body{
 h1{
   font-size: 40px;
   text-align: center;
+}
+
+@media screen and (max-width:800px){
+  .container{
+    flex-direction: column;
+  }
+  .card{
+    width:100%
+  }
+
+}
+.card:hover{
+  transform: scale(1.1);
 }
