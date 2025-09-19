@@ -5,23 +5,24 @@ html,
     margin: 0;
     font-size: 10px;
     box-sizing: border-box;
+    font-family: Caveat Brush, cursive;
 }
 body{
-    background-color: #01abe6 ;
+    background-color: #293e66;
 }
 .card {
   width: 30%;
   height: 40rem;
   margin: 3rem 0;
-  border: 2px solid;
+  border: 10px solid;
   border-radius: 10px;
-  background-color: #f82f6e;
+  background-color: #8fc3e6;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-color: #fab39c;
+  border-color: #80b3e3;
   transition:0.3s
 }
 .container {
@@ -30,8 +31,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-    border-color: #fab39c;
-  
+  border-color: #80b3e3;
 }
 .card-img {
   width: 50%;
@@ -39,7 +39,7 @@ body{
   margin: 3rem auto;
   border: 2px solid;
   border-radius: 10px;
-  border-color: #fab39c;
+  border-color: #5d392b;
 }
 .card-header {
   font-size: 40px;
@@ -50,6 +50,7 @@ body{
 h1{
   font-size: 40px;
   text-align: center;
+  color: #8fc3e6;
 }
 
 @media screen and (max-width:800px){
@@ -63,4 +64,10 @@ h1{
 }
 .card:hover{
   transform: scale(1.1);
+}
+h2{
+  color: #293e66;
+}
+h3{
+  color: #293e66;
 }
