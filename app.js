@@ -96,7 +96,7 @@ if (temp >= 212){
 findMiddle(8, 10, 5);
  */
 function findTele(w, x, y, z) {
-  if (w === 8 || (w === 9 && z === 8) || (z === 9 && x === y)) {
+  if (w === 8 || w === 9 && z === 8 || z === 9 && x === y) {
     console.log("ignore");
   } else {
     console.log("answer");
