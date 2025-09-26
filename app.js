@@ -84,4 +84,22 @@ if (temp >= 212){
   }
  }
  enterCastle(true, true, true); */
-function 
+/* function findMiddle(x, y, z) {
+  if ((x >= y && x <= z) || (x <= y && x >= z)) {
+    console.log(x);
+  } else if ((y >= z && y <= x) || (x <= y && x >= z)) {
+    console.log(y);
+  } else {
+    console.log(z);
+  }
+}
+findMiddle(8, 10, 5);
+ */
+function findTele(w, x, y, z) {
+  if (w === 8 || (w === 9 && z === 8) || (z === 9 && x === y)) {
+    console.log("ignore");
+  } else {
+    console.log("answer");
+  }
+}
+findTele(9, 5, 6, 8);
