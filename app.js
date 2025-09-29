@@ -95,11 +95,33 @@ if (temp >= 212){
 }
 findMiddle(8, 10, 5);
  */
-function findTele(w, x, y, z) {
-  if (w === 8 || w === 9 && z === 8 || z === 9 && x === y) {
+/* function findTele(w, x, y, z) {
+  if ((w === 8 || w === 9) && (z === 8 || z === 9) && x === y) {
     console.log("ignore");
   } else {
     console.log("answer");
   }
 }
-findTele(9, 5, 6, 8);
+findTele(9, 6, 6, 8); */
+/* const students = ["me", "you", "she", "he"];
+//console.log(students[0]);
+
+function printAll(list) {
+  for (let i = 0; i < students.length; i++) {
+    console.log(i);
+    console.log(list[i]);
+  }
+}
+printAll(students); */
+/* students.forEach((student, index) => console.log(student, index)) */
+/* function add1(a, b) {
+  return a + b;
+}
+const add2 = (a, b) => a + b; */
+
+/* console.log(students.find((student) => student === "me")); */
+
+/* const numbs = {1,2,3,4,5,6,7,8,9,10};
+numbs.filter((numba) => numba % 2 === 0).forEach((numba) => console.log(numba)); */
+/* const students = ["me", "you", "they", "she", "he"];
+students.push("Zey"); */
