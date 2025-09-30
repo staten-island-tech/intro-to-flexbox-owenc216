@@ -56,12 +56,39 @@ function getGCF(x, y) {
 }
 console.log(getGCF(12, 15)); */
 
-const string ="The red cat sat on the mat. Why are you so sad cat? Don't ask that.";
-function findLetters(list) {
-  list.fil;
+/* const sentence =
+  "The red cat sat on the mat. Why are you so sad cat? Don't ask that.";
+function lang(sentence) {
+  let s = 0;
+  let t = 0;
+  for (let i = 0; i < sentence.length, i++) {
+    if(sentence[i] === "S" || sentence[i] === "s"){
+      s++;
+    } else if (sentence[i] === "T" || sentence[i] === "t"){
+      t++;
+    }
+  }
+  if (s >= t) {
+    console.log("french")
+  } else {
+    console.log("english")
+  }
 }
-const found = students.find((student) => student == "Olivia");
-console.log(found); */
- numbs = ["The red cat sat on the mat. Why are you so sad cat? Don't ask that."];
-const even = numbs.filter((el) => el % 2 == 0);
-console.log(even);
+lang(sentence); */
+
+const day1 = "CC..C"
+const day2 = ".CC.."
+
+function occupied(day1, day2) {
+  let space = {0}
+  for (let i = 0; i < day1.length; i++) {
+    if (day1[i] === "C" && day2[i] === "C"){
+      space.push(i);
+    }
+  }
+  if (space.length > 0);
+    console.log(space.length+"space occupied for both days")
+  }else {
+    console.log("no space occupied for both days")
+  }
+}
