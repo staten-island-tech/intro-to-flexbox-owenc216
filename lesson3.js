@@ -76,19 +76,36 @@ function lang(sentence) {
 }
 lang(sentence); */
 
-const day1 = "CC..C"
-const day2 = ".CC.."
+/* const day1 = "CC..C";
+const day2 = ".CC..";
 
 function occupied(day1, day2) {
-  let space = {0}
+  let space = [0];
   for (let i = 0; i < day1.length; i++) {
-    if (day1[i] === "C" && day2[i] === "C"){
+    if (day1[i] === "C" && day2[i] === "C") {
       space.push(i);
     }
   }
-  if (space.length > 0);
-    console.log(space.length+"space occupied for both days")
-  }else {
-    console.log("no space occupied for both days")
+  if (space.length > 0) {
+    console.log(space.length + " space occupied for both days");
+  } else {
+    console.log("no space occupied for both days");
   }
 }
+occupied(day1, day2);
+ */
+
+/* function occupied(y,t) {
+  for (let i = 0; i < y.length; i++) {
+    console.log(y[i], t[i]);
+    if (y[i] === "c" && t[i] === "c")
+  }
+}
+occupied("CCC...", "CCCC.C") */
+/* const me = {
+  firstName: "Owen",
+  lastName: "Chen",
+};
+
+console.log(me.lastName);
+ */
