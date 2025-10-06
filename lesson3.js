@@ -109,3 +109,5 @@ occupied("CCC...", "CCCC.C") */
 
 console.log(me.lastName);
  */
+guys = ["A", "B", "C", "D", "E"];
+function dueling(list) {}
