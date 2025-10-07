@@ -1,4 +1,9 @@
-const items = {};
+const books = [
+  {
+    name: "Basmati",
+    price: 8,
+  },
+];
 function inject(album) {
   DOMSelectors.display.insertAdjacentHTML(
     "afterbegin",
