@@ -35,7 +35,7 @@ body{
 }
 .card-img {
   width: 50%;
-  height: 40rem;
+  height: 60%;
   margin: 3rem auto;
   border: 2px solid;
   border-radius: 10px;
@@ -62,9 +62,9 @@ h1{
   }
 
 }
-.card:hover{
+/* .card:hover{
   transform: scale(1.1);
-}
+} */
 h2{
   color: #293e66;
 }

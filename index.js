@@ -70,6 +70,13 @@ const Rice = [
     origin: "Spain",
   },
   {
+    name: "Black Rice",
+    price: 8,
+    img: "https://5.imimg.com/data5/SELLER/Default/2022/8/AN/OX/MX/157562539/new-product-1000x1000.jpeg",
+    type: "Medium-Grain",
+    origin: "China",
+  },
+  {
     name: "SunRice Rice",
     price: 8,
     img: "https://th.bing.com/th/id/R.7aec082d3f145b1c5bcba324bc1fc1ac?rik=A0pJRSMAGvUBuA&pid=ImgRaw&r=0",
@@ -141,13 +148,15 @@ const Rice = [
   },
 ];
 function inject(Rice) {
-  DOMSelectors.display.insertAdjacentHTML(
+  const container = document.querySelector(".container");
+  container.insertAdjacentHTML(
     "afterbegin",
-    <div class="display-card">
-      <img class="display-img" src="${album.url}" />
-      <h2 class="display-artist">${album.name}</h2>
-      <h3 class="display-album">${album.price}</h3>
-      <button class="remove btn">Remove Album</button>
-    </div>
+    `<div class="card">
+        <h2 class="card-header">${Rice.name}$</h2>
+        <img class="card-img" src="${Rice.img}"/>
+        <h3 class="card-price">${Rice.price}</h3>
+        <button class="Add btn">Add To Cart</button>
+      </div>`
   );
 }
+Rice.forEach((Rice) => inject(Rice));
