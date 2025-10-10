@@ -160,3 +160,15 @@ function inject(Rice) {
   );
 }
 Rice.forEach((Rice) => inject(Rice));
+
+let id = 0
+Rice.forEach((item) => inject (Rice, id), id++);
+function getCards(){
+  const button = document.querySelectorAll("button");
+  const btnArr = Array.from(buttons);
+  btnArr.forEach((btn) =>
+    btn.addEventListener("click", function (event) {
+      console.log(event.target.closest("display.Card").gitAttribute("data"));
+    })
+  );
+}
