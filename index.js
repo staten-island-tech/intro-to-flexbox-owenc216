@@ -159,16 +159,27 @@ function inject(Rice) {
       </div>`
   );
 }
-Rice.forEach((Rice) => inject(Rice));
-
-let id = 0
-Rice.forEach((item) => inject (Rice, id), id++);
-function getCards(){
+let id = 0;
+Rice.forEach((Rice) => inject(Rice, id), id++);
+function getCards() {
   const button = document.querySelectorAll("button");
-  const btnArr = Array.from(buttons);
+  const btnArr = Array.from(button);
   btnArr.forEach((btn) =>
     btn.addEventListener("click", function (event) {
       console.log(event.target.closest("display.Card").gitAttribute("data"));
     })
   );
 }
+function filterCard() {
+  const tabs = document.querySelectorAll("[data-category]");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".card").forEach((card) => card.remove());
+      const type = tab.getAttribute("data-category");
+      if (type !== "All") {
+        const filter
+      }
+    });
+  });
+}
+filterCard();
