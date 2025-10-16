@@ -147,12 +147,13 @@ const Rice = [
     origin: "North America",
   },
 ];
+const cart = [];
 function inject(Rice) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "afterbegin",
     `<div class="card">
-        <h2 class="card-header">${Rice.name}$</h2>
+        <h2 class="card-header">${Rice.name}</h2>
         <img class="card-img" src="${Rice.img}"/>
         <h3 class="card-price">${Rice.price}</h3>
         <button class="Add btn">Add To Cart</button>
@@ -177,9 +178,15 @@ function filterCard() {
       document.querySelectorAll(".card").forEach((card) => card.remove());
       const type = tab.getAttribute("data-category");
       if (type !== "All") {
-        const filter
+        const filters = Rice.filter((Rice) => Rice.type === type);
+        filters.forEach((Rice) => inject(Rice));
+      } else {
+        Rice.forEach((Rice) => inject(Rice));
       }
     });
   });
 }
 filterCard();
+function addToCart() {
+  
+}
