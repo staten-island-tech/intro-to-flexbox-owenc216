@@ -147,7 +147,6 @@ const Rice = [
     origin: "North America",
   },
 ];
-const cart = [];
 function inject(Rice) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
@@ -162,15 +161,6 @@ function inject(Rice) {
 }
 let id = 0;
 Rice.forEach((Rice) => inject(Rice, id), id++);
-function getCards() {
-  const button = document.querySelectorAll("button");
-  const btnArr = Array.from(button);
-  btnArr.forEach((btn) =>
-    btn.addEventListener("click", function (event) {
-      console.log(event.target.closest("display.Card").gitAttribute("data"));
-    })
-  );
-}
 function filterCard() {
   const tabs = document.querySelectorAll("[data-category]");
   tabs.forEach((tab) => {
@@ -188,5 +178,15 @@ function filterCard() {
 }
 filterCard();
 function addToCart() {
-  
+  const button = document.querySelectorAll(".Add btn");
+  const btnArr = Array.from(button);
+  btnArr.forEach((btn) =>
+    btn.addEventListener("click", function (event) {
+      console.log(event.target.closest(".card").getAttribute(".card"));
+      cart.push(".card");
+    })
+  );
 }
+addToCart();
+
+const cart = []
