@@ -1,4 +1,3 @@
-
 Intro to JS-3 Loops and Arrays (Lists)
 Michael Whalen
 •
@@ -16,8 +15,7 @@ Class comments
 
 Add class comment…
 
-Intro to JS-3 Loops and Arrays (Lists)
----
+## Intro to JS-3 Loops and Arrays (Lists)
 
 # 🖥️ Lesson: Loops, Arrays, and Arrow Functions in JavaScript
 
@@ -25,7 +23,7 @@ Intro to JS-3 Loops and Arrays (Lists)
 
 A **loop** is like a robot that repeats instructions.
 
-* Instead of writing the same line of code 10 times, we can tell the robot:
+- Instead of writing the same line of code 10 times, we can tell the robot:
 
 > “Keep doing this until I say stop.”
 
@@ -48,9 +46,9 @@ printAll(students);
 
 👉 What’s happening?
 
-* `i = 0` → Start at the first student (index 0).
-* `i < students.length` → Keep going as long as there are students left.
-* `i++` → Move to the next student.
+- `i = 0` → Start at the first student (index 0).
+- `i < students.length` → Keep going as long as there are students left.
+- `i++` → Move to the next student.
 
 **Analogy:**
 Imagine taking attendance in class. You start at the top of the list and go down one by one until you finish.
@@ -68,7 +66,7 @@ students.forEach((student) => console.log(student));
 ```
 
 👉 Prints each student’s name.
-**Analogy:** It’s like handing out papers — you give one to *each student*.
+**Analogy:** It’s like handing out papers — you give one to _each student_.
 
 ---
 
@@ -159,10 +157,10 @@ console.log("Game starting...");
 
 ## ✨ Key Takeaways
 
-* **For loops** repeat a set number of times.
-* **While loops** repeat until a condition is false.
-* **Array methods** like `forEach`, `find`, `filter` are shortcuts for common tasks.
-* **Arrow functions** are just a shorter way to write functions.
+- **For loops** repeat a set number of times.
+- **While loops** repeat until a condition is false.
+- **Array methods** like `forEach`, `find`, `filter` are shortcuts for common tasks.
+- **Arrow functions** are just a shorter way to write functions.
 
 ---
 

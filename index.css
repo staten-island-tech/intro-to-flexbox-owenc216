@@ -65,6 +65,10 @@ h1{
 /* .card:hover{
   transform: scale(1.1);
 } */
+h1{
+  text-align: center;
+  color: white;
+}
 h2{
   color: #293e66;
 }
