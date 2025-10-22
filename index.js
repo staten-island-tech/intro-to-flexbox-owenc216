@@ -16,14 +16,14 @@ const Rice = [
   {
     name: "Calrose Rice",
     price: 100,
-    img: "https://i5.walmartimages.com/seo/Homai-Calrose-Medium-Grain-Fancy-Rice-50-lb_90e1006c100f-5100fd-4dd0-9942-032100e2d1cf9c.574cc9fdc1007e910021001463ea17ddb33671.jpeg?odnHeight=51000&odnWidth=51000&odnBg=FFFFFF",
+    img: "https://thvnext.bing.com/th/id/OIP.MqeTaX3SdOu2onvvk8bAgAHaKA?w=130&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Short-Grain",
     origin: "USA, California",
   },
   {
     name: "Bomba Rice",
     price: 100,
-    img: "https://savorygourmet.com/cdn/shop/files/SANTO_TOMAS_Rice_Bomba_1_kg_10665_5defddd6-94fc-4f90-1004e9-5599da01005ff2_2000x2000.png?v=170316110004",
+    img: "https://thvnext.bing.com/th/id/OIP.XDHYY2TA_oo5wc_p7croKwHaHa?w=177&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Short-Grain",
     origin: "Spain",
   },
@@ -37,14 +37,14 @@ const Rice = [
   {
     name: "Valencia Rice",
     price: 100,
-    img: "https://scene7.samsclub.com/is/image/samsclub/000100562501202_A?$DT_PDP_BB$",
+    img: "https://thvnext.bing.com/th/id/OIP.qExTjEyoVn9OrZRmvSssswHaHa?w=213&h=213&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Short-Grain",
     origin: "Spain",
   },
   {
     name: "Jeju Rice",
     price: 100,
-    img: "https://img06.weeecdn.com/item/image/10092/441/221003EBF1610066B103.png",
+    img: "https://thvnext.bing.com/th/id/OIP.5Joswp9qOkW9sDYun85AmwHaHa?w=175&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Short-Grain",
     origin: "Korea",
   },
@@ -65,42 +65,42 @@ const Rice = [
   {
     name: "Calasparra Rice",
     price: 100,
-    img: "https://ibericotaste.us/cdn/shop/files/calasparra-rice_5ca5ad1a-d41e-471001-9f7c-47795953d2e9.jpg?v=171312102100&width=1200",
+    img: "https://thvnext.bing.com/th/id/OIP.ES_r_7pwlQoHBerCanGJVgHaJQ?w=136&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Medium-Grain",
     origin: "Spain",
   },
   {
     name: "Black Rice",
     price: 100,
-    img: "https://5.imimg.com/data5/SELLER/Default/2022/100/AN/OX/MX/157562539/new-product-1000x1000.jpeg",
+    img: "https://thvnext.bing.com/th/id/OIP.OkSyiwEacp_2LnFBY-fhzgHaHa?w=210&h=210&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Medium-Grain",
     origin: "China",
   },
   {
     name: "SunRice Rice",
     price: 100,
-    img: "https://th.bing.com/th/id/R.7aec01002d3f145b1c5bcba324bc1fc1ac?rik=A0pJRSMAGvUBuA&pid=ImgRaw&r=0",
+    img: "https://bkk.com.au/wp-content/uploads/2022/07/Sunwhite-rice-10kg-Medium-GrainSpecial.jpg",
     type: "Medium-Grain",
     origin: "Australia",
   },
   {
     name: "Sona Masoori Rice",
     price: 100,
-    img: "https://m.media-amazon.com/images/I/1001hM100AxwHyL._AC_.jpg",
+    img: "https://www.kesargrocery.com/images/P/Royal%20Organic%20Sona%20Masoori%20Rice%20-%2020%20LB.webp",
     type: "Medium-Grain",
     origin: "India",
   },
   {
     name: "Egyptian Rice",
     price: 100,
-    img: "https://bf1af2.a-cdn.akinoncloud.com/products/2024/09/12/71734/921100e02c-be26-4cb100-b10070-bda610054445b1_size310040_cropCenter.jpg",
+    img: "https://d2j6dbq0eux0bg.cloudfront.net/images/16880498/4261832090.png",
     type: "Medium-Grain",
     origin: "Egypt",
   },
   {
     name: "Basmati Rice",
     price: 100,
-    img: "https://cdnimg.webstaurantstore.com/images/products/xxl/235904/197100743.jpg",
+    img: "https://www.indusbasket.com/cdn/shop/products/grains-basmati-rice-20-lb-bag-royal-20082086379686_1024x.jpg?v=1602860759",
     type: "Long-Grain",
     origin: "India",
   },
@@ -114,7 +114,7 @@ const Rice = [
   {
     name: "American Rice",
     price: 100,
-    img: "https://i5.walmartimages.com/seo/Great-Value-Long-Grain-Enriched-Rice-20-lb_c2f6d109-09d5-4b7100-a2c7-1000da793c9ad5.5f10020eb042b2a573b4e2cd0fa73c910052.jpeg",
+    img: "https://i5.walmartimages.com/seo/4-pack-Riceland-Enriched-Long-Grain-White-Rice-20lb_ac3b45a9-b96a-4c62-be6d-e729695e4e28.ff9affe3eaa50766c42712caf8f73f29.jpeg",
     type: "Long-Grain",
     origin: "USA",
   },
@@ -128,21 +128,21 @@ const Rice = [
   {
     name: "Wehani Rice",
     price: 100,
-    img: "https://m.media-amazon.com/images/I/10010GUPjs4EL._SL1500_.jpg",
+    img: "https://thvnext.bing.com/th/id/OIP.IXJIl8fm3tFIjghTP1MJCwHaJZ?w=145&h=185&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1",
     type: "Long-Grain",
     origin: "USA",
   },
   {
     name: "Red Rice",
     price: 100,
-    img: "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_10057109700254.jpg",
+    img: "https://tse1.mm.bing.net/th/id/OIP.nb6Be5b69iWhLO92O0g3GQHaHa?cb=12ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
     type: "Long-Grain",
     origin: "Bhutan",
   },
   {
     name: "Wild Rice",
     price: 100,
-    img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ_6AEI69bGB100R100bTLFtauZ6vmIRqI1LW43QG0100d5dmncFP6LRnoPimT-MMDgZoJPnZZAJNmqaM_E0V_CmI4Sy4SmMTDeU74jdYMhfPj5WSFBUEiCYhbzYj100aAc2PYkLB6AvrHasQ&usqp=CAc",
+    img: "https://m.media-amazon.com/images/I/61I4R6ekpmL._AC_SX522_.jpg",
     type: "Long-Grain",
     origin: "North America",
   },
@@ -203,4 +203,3 @@ function addToCart() {
   }
 }
 addToCart();
-homiyak
