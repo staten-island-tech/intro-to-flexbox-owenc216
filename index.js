@@ -177,29 +177,30 @@ function filterCard() {
   });
 }
 filterCard();
-function addToCart() {
-  const button = document.querySelectorAll(".Add btn");
-  const btnArr = Array.from(button);
-  btnArr.forEach((btn) =>
-    btn.addEventListener("click", function (event) {
-      console.log(event.target.closest(".card").getAttribute(".card"));
-      cart.push(".card");
-    })
-  );
-}
-addToCart();
-
 const cart = [];
 const total = 0;
-
 function addToCart() {
-  const button = querySelector(".Add btn");
-  for (let i = 0; i < Rice.length; i++) {
-    button[i].addEventListener("click", function () {
+  const buttons = document.querySelectorAll(".Add btn");
+  buttons.forEach((cartclear) => cartclear.remove());
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
       const item = Rice[i];
       cart.push(item);
       total = total + item.price;
+      showCart();
     });
-  }
+  });
 }
 addToCart();
+function showCart() {
+  const container = document.querySelector(".cart");
+  cart.forEach((item) => {
+    container.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="cart">
+          <h4 class="cart-header">${item.name}</h4>
+          <h4 class="cart-header">${item.price}</h4>
+        </div>`
+    );
+  });
+}
