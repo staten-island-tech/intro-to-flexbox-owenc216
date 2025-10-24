@@ -67,9 +67,15 @@ h1{
 } */
 h2{
   color: #293e66;
+  font-size: 40px;
 }
 h3{
   color: #293e66;
+  font-size: 40px;
+}
+h4{
+  color: #293e66;
+  font-size: 25px;
 }
 .tab{
   font-size: 40px;
@@ -79,16 +85,8 @@ h3{
   border-radius: 10px;
   border-color: #293e66;
 }
-h4{
-  color: white;
-  text-align: center;
-  font-size: 40px;
-
-}
 .cartBox {
   position: sticky;
-  bottom: 0;
   background-color: white;
   border-top: 2px solid black;
-  padding: 10px;
 }
