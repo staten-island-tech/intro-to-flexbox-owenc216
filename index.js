@@ -155,12 +155,12 @@ function inject(Rice) {
         <h2 class="card-header">${Rice.name}</h2>
         <img class="card-img" src="${Rice.img}"/>
         <h3 class="card-price">$${Rice.price}</h3>
-        <button class="Add btn">Add To Cart</button>
+        <button class="btn">Add To Cart</button>
       </div>`
   );
 }
 let id = 0;
-Rice.forEach((Rice) => inject(Rice, id), id++);
+Rice.forEach((item) => inject(item));
 function filterCard() {
   const tabs = document.querySelectorAll("[data-category]");
   tabs.forEach((tab) => {
@@ -173,34 +173,38 @@ function filterCard() {
       } else {
         Rice.forEach((Rice) => inject(Rice));
       }
+      addToCart();
     });
   });
 }
 filterCard();
-const cart = [];
-const total = 0;
+let cart = [];
+let total = 0;
+
 function addToCart() {
-  const buttons = document.querySelectorAll(".Add btn");
-  buttons.forEach((cartclear) => cartclear.remove());
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const item = Rice[i];
-      cart.push(item);
-      total = total + item.price;
+  const buttons = document.querySelectorAll(".btn");
+  buttons.forEach ((button) => {
+    button.addEventListener("click", function () {
+      const card = button.parentElement;
+      const name = card.querySelector(".card-header").textContent;
+      const priceText = card.querySelector(".card-price").textContent;
+      const price = Number(priceText.replace("$", ""));
+      cart.push({ name: name, price: price});
+      total += price;
       showCart();
     });
   });
 }
-addToCart();
 function showCart() {
-  const container = document.querySelector(".cart");
-  cart.forEach((item) => {
-    container.insertAdjacentHTML(
-      "afterbegin",
-      `<div class="cart">
-          <h4 class="cart-header">${item.name}</h4>
-          <h4 class="cart-header">${item.price}</h4>
-        </div>`
+  const cartItems = document.querySelector(".cartItems");
+  const cartTotal = document.querySelector(".cartTotal");
+  cartItems.innerHTML = "";
+  cart.forEach((item) =>{
+    cartItems.insertAdjacentHTML(
+      "beforeend",
+      `<p>${item.name} - $${item.price}</p>`
     );
   });
+  cartTotal.textContent = "Total: $" + total;
 }
+addToCart();
