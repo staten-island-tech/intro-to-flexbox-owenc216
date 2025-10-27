@@ -205,6 +205,6 @@ function showCart() {
       `<h4>${item.name} - $${item.price}</h4>`
     );
   });
-  cartTotal.textContent = "Total: $" + total;
+  cartTotal.textContent = "Total: $" + total.toFixed(2);
 }
 addToCart();
