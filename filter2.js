@@ -1,4 +1,4 @@
-const books = [
+/* const books = [
   {
     title: "The Hidden Forest",
     author: "Ava Green",
@@ -62,3 +62,4 @@ function filterByGenre(genre) {
   const filteredBooks = books.filter();
 }
 filterByGenre("Mystery");
+ */
