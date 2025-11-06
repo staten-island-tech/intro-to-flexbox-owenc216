@@ -98,3 +98,22 @@ const dnsRecords = [
   { address: "stanford.edu", dns: "171.67.215.200" },
   { address: "youtube.com", dns: "142.250.190.46" },
 ];
+
+function findDns(list) {
+  let low = 0;
+  let high = list.length - 1;
+  while (low <= high) {
+    let mid = Math.floor((low + high) / 2);
+    let midAdress = records[mid].address;
+
+    if (midAddress === target) {
+      return records[mid].dns;
+    } else if (midAdress > target) {
+      high = mid - 1;
+    } else {
+      low = mid + 1;
+    }
+  }
+
+  return "DNS not found";
+}
