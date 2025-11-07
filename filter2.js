@@ -79,7 +79,7 @@ filterByGenre("Mystery");
   return total;
 }
 console.log(applyDiscount(cart)); */
-const dnsRecords = [
+/* const dnsRecords = [
   { address: "amazon.com", dns: "205.251.242.103" },
   { address: "apple.com", dns: "17.253.144.10" },
   { address: "bbc.com", dns: "151.101.64.81" },
@@ -116,4 +116,40 @@ function findDns(list) {
   }
 
   return "DNS not found";
+} */
+let money = 48;
+let machine1 = 3;
+let machine2 = 10;
+let machine3 = 4;
+function Martha(money, machine1, machine2, machine3) {
+  let i = 1;
+  while (money > 0) {
+    if (machine1 % 35 === 0 && i % 3 === 1) {
+      money += 29;
+      machine1 += 1;
+      i += 1;
+    } else if (machine2 % 100 === 0 && i % 3 === 2) {
+      money += 59;
+      machine1 += 1;
+      i += 1;
+    } else if (machine3 % 10 === 0 && i % 3 === 0) {
+      money += 8;
+      machine1 += 1;
+      i += 1;
+    } else if (machine2 % 100 != 0 && i % 3 === 1) {
+      money -= 1;
+      machine1 += 1;
+      i += 1;
+    } else if (machine3 % 10 != 0 && i % 3 === 2) {
+      money -= 1;
+      machine1 += 1;
+      i += 1;
+    } else if (machine3 % 10 != 0 && i % 3 === 0) {
+      money -= 1;
+      machine1 += 1;
+      i += 1;
+    }
+  }
+  console.log(i);
 }
+Martha();
