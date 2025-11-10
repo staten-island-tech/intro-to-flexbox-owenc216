@@ -130,26 +130,26 @@ function Martha(money, machine1, machine2, machine3) {
       i += 1;
     } else if (machine2 % 100 === 0 && i % 3 === 2) {
       money += 59;
-      machine1 += 1;
+      machine2 += 1;
       i += 1;
     } else if (machine3 % 10 === 0 && i % 3 === 0) {
       money += 8;
-      machine1 += 1;
+      machine3 += 1;
       i += 1;
-    } else if (machine2 % 100 != 0 && i % 3 === 1) {
+    } else if (i % 3 === 1) {
       money -= 1;
       machine1 += 1;
       i += 1;
-    } else if (machine3 % 10 != 0 && i % 3 === 2) {
+    } else if (i % 3 === 2) {
       money -= 1;
-      machine1 += 1;
+      machine2 += 1;
       i += 1;
-    } else if (machine3 % 10 != 0 && i % 3 === 0) {
+    } else if (i % 3 === 0) {
       money -= 1;
-      machine1 += 1;
+      machine3 += 1;
       i += 1;
     }
   }
-  console.log(i);
+  return i - 1;
 }
-Martha();
+console.log(Martha(48, 3, 10, 4));
